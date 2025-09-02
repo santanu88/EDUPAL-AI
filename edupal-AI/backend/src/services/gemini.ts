@@ -80,10 +80,11 @@ You are an expert assistant for last-minute exam preparation in the field of ${e
    End with: "Remember: 'Engineering is the art of directing nature' - James Nasmyth 🛠️"
 `;
 
-    const model = genAI.getGenerativeModel({
-      model: "gemini-2.5-flash-preview-04-17",
-      systemInstruction,
-    });
+const model = genAI.getGenerativeModel({
+  model: "gemini-2.5-flash", // 
+  systemInstruction,
+});
+
 
     const chat = model.startChat({
       history: messages.map((msg) => ({
