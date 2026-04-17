@@ -102,8 +102,8 @@ export default function Oops() {
       ];
 
       // Using Axios for the API call
-      const response = await axios.post(
-        "https://edupal-ai-1.onrender.com/ai/expert-chat",
+     const response = await axios.post(
+  `${import.meta.env.VITE_API_URL}/ai/expert-chat`,
         {
           messages: apiMessages,
           subjectExpert,

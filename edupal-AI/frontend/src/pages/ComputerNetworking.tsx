@@ -77,8 +77,8 @@ export default function ComputerNetworking() {
     setIsLoading(true);
 
     try {
-      const response = await axios.post(
-        "https://edupal-ai-1.onrender.com/ai/expert-chat",
+     const response = await axios.post(
+  `${import.meta.env.VITE_API_URL}/ai/expert-chat`,
         {
           messages: [
             ...messages.map((msg) => ({
