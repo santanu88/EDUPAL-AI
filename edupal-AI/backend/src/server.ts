@@ -7,7 +7,13 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: ["https://edupal-ai.vercel.app"],
+       origin: [
+      "https://edupal-ai.vercel.app",
+      "https://edupal-ai-git-main-santanu-portfolio.vercel.app",
+      "https://edupal-9aaegx5gx-santanu-portfolio.vercel.app",
+      "http://localhost:5173",
+      "http://localhost:5174"
+    ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true, 
   })
