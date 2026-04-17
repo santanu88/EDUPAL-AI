@@ -7,7 +7,6 @@ import {
   BrainCircuit,
   LineChart,
   MessageSquareText,
-  ArrowRight,
 } from "lucide-react";
 
 // Helper function to conditionally join class names
@@ -30,7 +29,7 @@ function FeatureCard({
   color,
   delay,
 }: FeatureCardProps) {
-  const [isHovered, setIsHovered] = useState(false);
+  const [, setIsHovered] = useState(false);
 
   return (
     <motion.div

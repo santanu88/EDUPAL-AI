@@ -166,7 +166,7 @@ borderClassName=" rounded-xl overflow-hidden shadow-lg"
     
 </div>
 <InfiniteMovingCardsDemo/>
-<PricingSection tiers={defaultTiers} />
+<PricingSection  />
 <Footer/>
   </div>
   )

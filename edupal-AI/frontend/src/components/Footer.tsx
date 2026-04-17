@@ -93,6 +93,12 @@ export default function Footer() {
         <div className="mt-8 sm:mt-10 md:mt-12 lg:mt-16 pt-4 sm:pt-6 md:pt-8 border-t border-gray-800 text-gray-400 text-sm text-center">
           Copyright © {currentYear} EduPal AI. All Rights Reserved.
         </div>
+        <FooterColumn
+  title=""
+  links={[
+    { label: "", href: "" },
+  ]}
+/>
       </div>
     </footer>
   );
