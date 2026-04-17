@@ -13,7 +13,6 @@ interface Message {
   role: "user" | "assistant";
   content: string;
 }
-
 export default function DataScienceExpert() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
