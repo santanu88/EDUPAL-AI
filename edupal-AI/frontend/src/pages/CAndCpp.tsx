@@ -103,7 +103,7 @@ export default function CandCpp() {
 
       // Using Axios for the API call
       const response = await axios.post(
-        "http://localhost:5000/ai/expert-chat",
+        "https://edupal-ai-1.onrender.com/ai/expert-chat",
         {
           messages: apiMessages,
           subjectExpert,
